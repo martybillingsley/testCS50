@@ -6,7 +6,8 @@ and in describing partly random or chaotic phenomena such as crystal growth, flu
 
 A fractal looks the same at any magnification.
 
-Test out turtles now. Type in 'from turtle import *'
+Test out turtles now. 
 
-Type 'forward(100)', run and see what happens
+Bring up the square.py file.
+To run it, type python square.py in the terminal window.
 
