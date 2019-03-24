@@ -6,3 +6,4 @@ def square(size):
     right(90)
     
 square(50)
+done()
