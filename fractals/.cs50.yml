@@ -4,5 +4,3 @@ lab50:
     - readme
     - terminal
     - x
-  files:
-    - !include square.py
