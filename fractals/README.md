@@ -66,3 +66,43 @@ In each `forward` and `backward` command, use the argument variable instead of a
  &nbsp;&nbsp; `left(30)`<br>
  &nbsp;&nbsp; `backward(size)`
 {% endspoiler %}
+
+{% next  %}
+### At the end of each branch, draw another tree 3/4 the size of the original
+
+Note: think about when to stop!
+
+{% spoiler "Algorithm" %}
+Draw the trunk<br>
+Turn and draw a branch<br>
+Draw a tree on the end of that branch<br>
+Go backward to the trunk<br>
+Turn left and draw another branch<br>
+Draw a tree on the end of that branch<br>
+Go backward to the trunk<br>
+Turn right and go backward down the trunk<br>
+{% endspoiler %}
+
+{% spoiler "Problems?" %}
+Does your tree look like this?<br>
+![Tree gone wrong](https://raw.githubusercontent.com/martybillingsley/images/master/tree2.png) 
+Add another argument to the drawTree() function to indicate the depth of the tree.<br>
+Every time you draw another tree, make it smaller **and** reduce the depth by one.
+{% endspoiler %}
+
+{% spoiler "Code" %}
+`def drawTree(size, depth)`<br>
+ &nbsp;&nbsp; `if depth > 0:`<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; `forward(size)`<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; `left(30)`<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; `forward(size*0.75)`<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; `drawTree(size, depth-1)`<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; `backward(size)`<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; `right(30)`<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; `right(30)`<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; `forward(size)`<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; `drawTree(size, depth-1)`<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; `backward(size)`<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; `left(30)`<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; `backward(size)`
+{% endspoiler %}
