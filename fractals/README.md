@@ -28,7 +28,7 @@ Go backward the same number of steps as the first forward<br>
 {% endspoiler %}
 
 {% spoiler "Code" %}
-`def drawTree()`<br>
+`def drawTree():`<br>
  &nbsp;&nbsp; `forward(100)`<br>
  &nbsp;&nbsp; `left(30)`<br>
  &nbsp;&nbsp; `forward(100)`<br>
@@ -54,7 +54,7 @@ In each `forward` and `backward` command, use the argument variable instead of a
 {% endspoiler %}
 
 {% spoiler "Code" %}
-`def drawTree(size)`<br>
+`def drawTree(size):`<br>
  &nbsp;&nbsp; `forward(size)`<br>
  &nbsp;&nbsp; `left(30)`<br>
  &nbsp;&nbsp; `forward(size)`<br>
@@ -92,17 +92,17 @@ Every time you draw another tree, make it smaller **and** reduce the depth by on
 {% endspoiler %}
 
 {% spoiler "Code" %}
-`def drawTree(size, depth)`<br>
+`def drawTree(size, depth):`<br>
  &nbsp;&nbsp; `if depth > 0:`<br>
  &nbsp;&nbsp;&nbsp;&nbsp; `forward(size)`<br>
  &nbsp;&nbsp;&nbsp;&nbsp; `left(30)`<br>
- &nbsp;&nbsp;&nbsp;&nbsp; `forward(size*0.75)`<br>
- &nbsp;&nbsp;&nbsp;&nbsp; `drawTree(size, depth-1)`<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; `forward(size)`<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; `drawTree(size*0.75, depth-1)`<br>
  &nbsp;&nbsp;&nbsp;&nbsp; `backward(size)`<br>
  &nbsp;&nbsp;&nbsp;&nbsp; `right(30)`<br>
  &nbsp;&nbsp;&nbsp;&nbsp; `right(30)`<br>
  &nbsp;&nbsp;&nbsp;&nbsp; `forward(size)`<br>
- &nbsp;&nbsp;&nbsp;&nbsp; `drawTree(size, depth-1)`<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; `drawTree(size*0.75, depth-1)`<br>
  &nbsp;&nbsp;&nbsp;&nbsp; `backward(size)`<br>
  &nbsp;&nbsp;&nbsp;&nbsp; `left(30)`<br>
  &nbsp;&nbsp;&nbsp;&nbsp; `backward(size)`
