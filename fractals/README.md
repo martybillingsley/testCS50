@@ -3,8 +3,8 @@ A *fractal* is a curve or geometric figure, each part of which has the same stat
 
 In drawing a fractal on the screen, there must be some point at which the program stops drawing. A Python turtle, after all, can't move forward less than one pixel or turn less than one degree.
 
-Start with drawing a simple tree. 
-A tree is made of a trunk and branches. Write a <drawTree()> function that draws a simple tree. The turtle must end up where it started, facing the way it was when it started.
+###Start with drawing a simple tree. 
+A tree is made of a trunk and branches. Write a `<drawTree()>` function that draws a simple tree. The turtle must end up where it started, facing the way it was when it started.
 
 ![Simple tree](https://raw.githubusercontent.com/martybillingsley/images/master/tree1.png) 
 {% spoiler "Turtle Reference" %}
@@ -15,28 +15,28 @@ left (degrees)
 {% endspoiler %}
 
 {% spoiler "Algorithm" %}
-Go forward a certain number of steps
-Turn right a certain number of degrees
-Go forward the same number of steps
-Go backward the same number of steps
-Turn left the same number of degrees
-Turn left the same number of degrees
-Go forward the same number of steps
-Go backward the same number of steps
-Turn right the same number of degrees
-Go backward the same number of steps
+Go forward a certain number of steps<br>
+Turn right a certain number of degrees<br>
+Go forward the same number of steps<br>
+Go backward the same number of steps<br>
+Turn left the same number of degrees<br>
+Turn left the same number of degrees<br>
+Go forward the same number of steps<br>
+Go backward the same number of steps<br>
+Turn right the same number of degrees<br>
+Go backward the same number of steps<br>
 {% endspoiler %}
 
 {% spoiler "Code" %}
-forward(100)
-left(30)
-forward(100)
-backward(100)
-right(30)
-right(30)
-forward(100)
-backward(100)
-left(30)
+forward(100)<br>
+left(30)<br>
+forward(100)<br>
+backward(100)<br>
+right(30)<br>
+right(30)<br>
+forward(100)<br>
+backward(100)<br>
+left(30)<br>
 backward(100)
 {% endspoiler %}
 
