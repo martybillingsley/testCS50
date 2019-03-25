@@ -4,7 +4,7 @@ A *fractal* is a curve or geometric figure, each part of which has the same stat
 In drawing a fractal on the screen, there must be some point at which the program stops drawing. A Python turtle, after all, can't move forward less than one pixel or turn less than one degree.
 
 ###Start with drawing a simple tree. 
-A tree is made of a trunk and branches. Write a `<drawTree()>` function that draws a simple tree. The turtle must end up where it started, facing the way it was when it started.
+A tree is made of a trunk and branches. Write a `drawTree()` function that draws a simple tree. The turtle must end up where it started, facing the way it was when it started.
 
 ![Simple tree](https://raw.githubusercontent.com/martybillingsley/images/master/tree1.png) 
 {% spoiler "Turtle Reference" %}
@@ -15,16 +15,16 @@ left (degrees)
 {% endspoiler %}
 
 {% spoiler "Algorithm" %}
-Go forward a certain number of steps<br>
-Turn right a certain number of degrees<br>
-Go forward the same number of steps<br>
+Go forward<br>
+Turn right<br>
+Go forward<br>
 Go backward the same number of steps<br>
-Turn left the same number of degrees<br>
-Turn left the same number of degrees<br>
-Go forward the same number of steps<br>
+Turn left the same number of degrees that you turned right<br>
+Turn left<br>
+Go forward<br>
 Go backward the same number of steps<br>
-Turn right the same number of degrees<br>
-Go backward the same number of steps<br>
+Turn right the same number of degrees that you turned left<br>
+Go backward the same number of steps as the first forward<br>
 {% endspoiler %}
 
 {% spoiler "Code" %}
