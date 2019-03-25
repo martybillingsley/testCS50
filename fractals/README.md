@@ -63,6 +63,6 @@ In each `forward` and `backward` command, use the argument variable instead of a
  &nbsp;&nbsp; `right(30)`<br>
  &nbsp;&nbsp; `forward(size)`<br>
  &nbsp;&nbsp; `backward(size)`<br>
-  &nbsp;&nbsp;`left(30)`<br>
+ &nbsp;&nbsp; `left(30)`<br>
  &nbsp;&nbsp; `backward(size)`
 {% endspoiler %}
