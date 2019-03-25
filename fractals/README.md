@@ -69,8 +69,9 @@ In each `forward` and `backward` command, use the argument variable instead of a
 
 {% next  %}
 ### At the end of each branch, draw another tree 3/4 the size of the original
-
-Note: think about when to stop!
+`drawTree(50, 6)` should draw a tree like this:<br>
+![Tree](https://raw.githubusercontent.com/martybillingsley/images/master/tree3.png) <br>
+<br>Note: think about when to stop!
 
 {% spoiler "Algorithm" %}
 Draw the trunk<br>
@@ -85,8 +86,8 @@ Turn right and go backward down the trunk<br>
 
 {% spoiler "Problems?" %}
 Does your tree look like this?<br>
-![Tree gone wrong](https://raw.githubusercontent.com/martybillingsley/images/master/tree2.png) 
-Add another argument to the drawTree() function to indicate the depth of the tree.<br>
+![Tree gone wrong](https://raw.githubusercontent.com/martybillingsley/images/master/tree2.png) <br>
+Add another argument to the `drawTree()` function to indicate the depth of the tree.<br>
 Every time you draw another tree, make it smaller **and** reduce the depth by one.
 {% endspoiler %}
 
