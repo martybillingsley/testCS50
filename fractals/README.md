@@ -28,18 +28,18 @@ Go backward the same number of steps as the first forward<br>
 {% endspoiler %}
 
 {% spoiler "Code" %}
-`forward(100)<br>
-left(30)<br>
-forward(100)<br>
-backward(100)<br>
-right(30)<br>
-right(30)<br>
-forward(100)<br>
-backward(100)<br>
-left(30)<br>
-backward(100)`
+`forward(100)`<br>
+`left(30)`<br>
+`forward(100)`<br>
+`backward(100)`<br>
+`right(30)`<br>
+`right(30)`<br>
+`forward(100)`<br>
+`backward(100)`<br>
+`left(30)`<br>
+`backward(100)`
 {% endspoiler %}
 
 {% next "Step 2" %}
 
-Add an argument to the drawTree() function that specifies the size of the tree
+Add an argument to the `drawTree()` function that specifies the size of the tree
