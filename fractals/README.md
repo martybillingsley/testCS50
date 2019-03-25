@@ -28,18 +28,41 @@ Go backward the same number of steps as the first forward<br>
 {% endspoiler %}
 
 {% spoiler "Code" %}
-`forward(100)`<br>
-`left(30)`<br>
-`forward(100)`<br>
-`backward(100)`<br>
-`right(30)`<br>
-`right(30)`<br>
-`forward(100)`<br>
-`backward(100)`<br>
-`left(30)`<br>
-`backward(100)`
+`def drawTree()`<br>
+`  forward(100)`<br>
+`  left(30)`<br>
+`  forward(100)`<br>
+`  backward(100)`<br>
+`  right(30)`<br>
+`  right(30)`<br>
+`  forward(100)`<br>
+`  backward(100)`<br>
+`  left(30)`<br>
+`  backward(100)`
 {% endspoiler %}
 
-{% next "Step 2" %}
+{% next  %}
 
-Add an argument to the `drawTree()` function that specifies the size of the tree
+### Add an argument to the `drawTree()` function that specifies the size of the tree
+Try it out with the following commands:
+`drawTree(100)`
+and
+`drawTree(50)`
+
+{% spoiler "Details" %}
+In each `forward` and `backward` command, use the argument variable instead of a number
+{% endspoiler %}
+
+{% spoiler "Code" %}
+`def drawTree(size)`<br>
+`  forward(size)`<br>
+`  left(30)`<br>
+`  forward(size)`<br>
+`  backward(size)`<br>
+`  right(30)`<br>
+`  right(30)`<br>
+`  forward(size)`<br>
+`  backward(size)`<br>
+`  left(30)`<br>
+`  backward(size)`
+{% endspoiler %}
