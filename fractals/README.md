@@ -117,7 +117,7 @@ Trees aren't symmetric in real life. Instead of always turning a set number of d
 {% spoiler "Notes" %}
 Import the random library:<br>
 `from random import *`<br>
-`randint(10,40)`  will give you a random integer between 10 anbd 40<br>
+`randint(10,40)`  will give you a random integer between 10 and 40<br>
 Be sure to turn right the same amount you turn left<br>
 {% endspoiler %}
 
@@ -141,7 +141,7 @@ Before drawing the trunk:<br>
 `color('brown')`<br>
 `pensize(depth*2)`<br>
 (you'll have to do this more than once)<br><br>
-Before stamping:
+Before stamping:<br>
 `colors=['red', 'orange', 'yellow', 'darkred', 'gold']`<br>
 `color(choice(colors))`<br>
 {% endspoiler %}
