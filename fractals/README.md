@@ -29,7 +29,7 @@ Go backward the same number of steps as the first forward<br>
 
 {% spoiler "Code" %}
 `def drawTree()`<br>
-`  forward(100)`<br>
+` forward(100)`<br>
 `  left(30)`<br>
 `  forward(100)`<br>
 `  backward(100)`<br>
