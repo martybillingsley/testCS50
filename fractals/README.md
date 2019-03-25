@@ -3,15 +3,16 @@ A *fractal* is a curve or geometric figure, each part of which has the same stat
 
 In drawing a fractal on the screen, there must be some point at which the program stops drawing. A Python turtle, after all, can't move forward less than one pixel or turn less than one degree.
 
+## Fractal Trees
 ### Start with drawing a simple tree. 
-A tree is made of a trunk and branches. Write a `drawTree()` function that draws a simple tree. The turtle must end up where it started, facing the way it was when it started.
+A tree is made of a trunk and branches. Write a `drawTree()` function that draws a simple tree with a trunk and two branches. The turtle must end up where it started, facing the way it was when it started.
 
 ![Simple tree](https://raw.githubusercontent.com/martybillingsley/images/master/tree1.png) 
 {% spoiler "Turtle Reference" %}
-forward (distance)
-backward (distance)
-right (degrees)
-left (degrees)
+`forward (`distance in pixels`)`<br>
+`backward (`distance in pixels`)`<br>
+`right (`degrees`)`<br>
+`left (`degrees`)`<br>
 {% endspoiler %}
 
 {% spoiler "Algorithm" %}
@@ -69,7 +70,7 @@ In each `forward` and `backward` command, use the argument variable instead of a
 
 {% next  %}
 ### At the end of each branch, draw another tree 3/4 the size of the original
-`drawTree(50, 6)` should draw a tree like this:<br>
+Try to draw a tree like this:<br>
 ![Tree](https://raw.githubusercontent.com/martybillingsley/images/master/tree3.png) <br>
 <br>Note: think about when to stop!
 
@@ -105,5 +106,22 @@ Every time you draw another tree, make it smaller **and** reduce the depth by on
  &nbsp;&nbsp;&nbsp;&nbsp; `drawTree(size*0.75, depth-1)`<br>
  &nbsp;&nbsp;&nbsp;&nbsp; `backward(size)`<br>
  &nbsp;&nbsp;&nbsp;&nbsp; `left(30)`<br>
- &nbsp;&nbsp;&nbsp;&nbsp; `backward(size)`
+ &nbsp;&nbsp;&nbsp;&nbsp; `backward(size)`<br>
+ The tree above was drawn with the command `drawTree(50,6)`
 {% endspoiler %}
+{% next  %}
+### Add some variety to your tree (just for fun)
+
+Trees aren't symmetric in real life. Instead of always turning a set number of degrees (30 in the example), choose a random number between 10 and 40 each time you draw a new branch.
+![Random tree](https://raw.githubusercontent.com/martybillingsley/images/master/tree4.png) <br>
+{% spoiler "Notes" %}
+Import the random library<br>
+`randint(10,40)`  will give you a random integer between 10 anbd 40<br>
+Be sure to turn right the same amount you turn left<br>
+{% endspoiler %}
+
+Make the tree even more realistic. Set the turtle shape to 'turtle' and stamp a green leaf every time you draw a tree of depth 0.
+![Green tree](https://raw.githubusercontent.com/martybillingsley/images/master/tree5.png) <br>
+
+Even more realistic: make the branches brown, with the thickness depending on the depth (`depth*2` works well). Choose leaf colors at random from a list.
+![Fall tree](https://raw.githubusercontent.com/martybillingsley/images/master/tree6.png) <br>
