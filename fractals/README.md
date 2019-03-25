@@ -115,7 +115,8 @@ Every time you draw another tree, make it smaller **and** reduce the depth by on
 Trees aren't symmetric in real life. Instead of always turning a set number of degrees (30 in the example), choose a random number between 10 and 40 each time you draw a new branch.
 ![Random tree](https://raw.githubusercontent.com/martybillingsley/images/master/tree4.png) <br>
 {% spoiler "Notes" %}
-Import the random library<br>
+Import the random library:<br>
+`from random import *`<br>
 `randint(10,40)`  will give you a random integer between 10 anbd 40<br>
 Be sure to turn right the same amount you turn left<br>
 {% endspoiler %}
@@ -123,5 +124,25 @@ Be sure to turn right the same amount you turn left<br>
 Make the tree even more realistic. Set the turtle shape to 'turtle' and stamp a green leaf every time you draw a tree of depth 0.
 ![Green tree](https://raw.githubusercontent.com/martybillingsley/images/master/tree5.png) <br>
 
+{% spoiler "Code" %}
+ `if depth > 0:`<br>
+  code for drawing tree<br>
+  `else:`<br>
+  &nbsp;&nbsp; `color('green')`<br>
+  &nbsp;&nbsp; `stamp()`<br>
+  &nbsp;&nbsp; `color('black')`<br>
+{% endspoiler %}
+
 Even more realistic: make the branches brown, with the thickness depending on the depth (`depth*2` works well). Choose leaf colors at random from a list.
 ![Fall tree](https://raw.githubusercontent.com/martybillingsley/images/master/tree6.png) <br>
+
+{% spoiler "Code" %}
+Before drawing the trunk:<br>
+`color('brown')`<br>
+`pensize(depth*2)`<br>
+(you'll have to do this more than once)<br><br>
+Before stamping:
+`colors=['red', 'orange', 'yellow', 'darkred', 'gold']`<br>
+`color(choice(colors))`<br>
+{% endspoiler %}
+
