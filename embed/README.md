@@ -3,7 +3,7 @@ This is a test of embedding HMTL and scripts <br><br>
 ## Emoji widget
 
 <div style="background-color:lightblue; padding:20px; width:300px;">
-	Input number (ord): 
+	Input number: 
 	<input id="ordNumberInput" type="number" min="0" value="65"><br>
 	<input type="button" value="Click to Convert" onclick="convertToEmoji();">
 	<div id="emojiOutput" style="width:100px;">Stuff</div>
@@ -25,8 +25,9 @@ This is a test of embedding HMTL and scripts <br><br>
 128175<br>
 
 
-<!--
+
 <hr>
+<!--
 <p>Decimal (Normal, base-10 with digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9):</p>
 
 <div id="odometerDecDiv" style="width:100%; height:45px; line-height: 45px;"></div>
