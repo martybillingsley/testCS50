@@ -1,4 +1,19 @@
 This is a test of embedding HMTL and scripts <br><br>
+<hr>
+Emoji widget
+<input name="ordNumberInput" type="number" min="0">
+<input type="button" value="Click to Convert" onclick="alert("Button CLicked");">
+
+
+Try with these numbers:
+128514<br>
+128076<br>
+128293<br>
+128175<br>
+
+
+
+<hr>
 <p>Decimal (Normal, base-10 with digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9):</p>
 
 <div id="odometerDecDiv" style="width:100%; height:45px; line-height: 45px;"></div>
