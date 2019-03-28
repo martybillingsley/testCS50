@@ -1,6 +1,28 @@
-This is a test of embed. <br><br>
+This is a test of embedding HMTL and scripts <br><br>
+<p>Decimal (Normal, base-10 with digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9):</p>
 
-<script type="text/javascript">// <![CDATA[
+<div id="odometerDecDiv" style="width:100%; height:45px; line-height: 45px;"></div>
+
+<p>Binary (base-2 with digits 0, 1):</p>
+
+<div id="odometerBinDiv" style="width:100%; height:45px; line-height: 45px;"></div>
+
+<p>Hexadecimal (base-16 with digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F):</p>
+
+<div id="odometerHexDiv" style="width:100%; height:45px; line-height: 45px;"></div>
+
+<input type="button" value="Start" onclick="runodometers();" /> 
+<input type="button" value="Step" onclick="update();" /> 
+<input type="button" value="Stop" onclick="stopodometers();" /> 
+<input type="button" value="Reset" onclick="n = 0; myOdometerDec.set(0); myOdometerBin.set(0); myOdometerHex.set(0);" />
+
+
+<!--<script src="http://inventwithpython.com/source/odometer.js" type="text/javascript"></script>
+<script src="http://inventwithpython.com/source/odometerdisplay.js" type="text/javascript"></script>
+-->
+<script type="text/javascript">
+
+
 //============================================================================//
 //  Gavin Brock's CSS/JavaScript Animated Odometer
 //  Version 1.0 - April 7th 2008
@@ -18,7 +40,7 @@ This is a test of embed. <br><br>
 //  GNU General Public License for more details.
 //
 //  You should have received a copy of the GNU General Public License
-//  along with this program.  If not, see <<a href="http://www.gnu.org/licenses/" class="_blanktarget">http://www.gnu.org/licenses/</a>>.
+//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //============================================================================//
 
 // The hexadecimal and binary ugly hacks are to be solely blamed on Al Sweigart though.
@@ -224,7 +246,6 @@ function OdometerBin (parentDiv,opts) {
         return(this.value);
     };
 
-
     var odometerDiv = document.createElement("div")
     odometerDiv.setAttribute("id","odometer");
     odometerDiv.style.cssText="text-align: left";
@@ -260,8 +281,6 @@ function OdometerBin (parentDiv,opts) {
 
     if (this.value >= 0) this.set(this.value);
 }
-
-
 
 function OdometerDec (parentDiv,opts) {
     if (!parentDiv) throw "ERROR: Odometer object must be past a document element.";
@@ -374,12 +393,6 @@ function OdometerDec (parentDiv,opts) {
     if (this.value >= 0) this.set(this.value);
 }
 
-
-
-
-
-
-
 var n = 0;
 var myOdometerDec, myOdometerBin, myOdometerHex;
 var keeprunning = false;
@@ -414,10 +427,6 @@ function update () {
     }
 }
 
-
-
-
-
-
 startodometers();
-// ]]></script>
+</script>
+
