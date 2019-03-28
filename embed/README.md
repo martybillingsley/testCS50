@@ -1,9 +1,22 @@
 This is a test of embedding HMTL and scripts <br><br>
 <hr>
 ## Emoji widget
-<input name="ordNumberInput" type="number" min="0"></input><br>
-<input type="button" value="Click to Convert" onclick="alert("Button CLicked");"></input><br>
 
+<div style="background-color:lightblue; padding:20px; width:300px;">
+	Input number (ord): 
+	<input id="ordNumberInput" type="number" min="0" value="65"></input><br>
+	<input type="button" value="Click to Convert" onclick="convertToEmoji();"></input>
+	<div id="emojiOutput" style="width:100px;">Stuff</div>
+<br></div>
+
+<script>
+	function convertToEmoji(){
+		var num = document.getElementById("ordNumberInput").value;
+		var emoji = String.fromCharCode(num);
+		emoji = '&#x'+num
+		document.getElementById('emojiOutput').innerText = String.fromCodePoint(num);;
+	}
+</script>
 
 #### Try with these numbers:
 128514<br>
