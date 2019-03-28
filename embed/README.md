@@ -1,11 +1,11 @@
 This is a test of embedding HMTL and scripts <br><br>
 <hr>
-Emoji widget
-<input name="ordNumberInput" type="number" min="0">
-<input type="button" value="Click to Convert" onclick="alert("Button CLicked");">
+## Emoji widget
+<input name="ordNumberInput" type="number" min="0"></input><br>
+<input type="button" value="Click to Convert" onclick="alert("Button CLicked");"></input><br>
 
 
-Try with these numbers:
+#### Try with these numbers:
 128514<br>
 128076<br>
 128293<br>
