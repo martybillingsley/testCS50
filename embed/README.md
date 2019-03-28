@@ -25,7 +25,7 @@ This is a test of embedding HMTL and scripts <br><br>
 128175<br>
 
 
-
+<!--
 <hr>
 <p>Decimal (Normal, base-10 with digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9):</p>
 
@@ -45,9 +45,8 @@ This is a test of embedding HMTL and scripts <br><br>
 <input type="button" value="Reset" onclick="n = 0; myOdometerDec.set(0); myOdometerBin.set(0); myOdometerHex.set(0);" />
 
 
-<!--<script src="http://inventwithpython.com/source/odometer.js" type="text/javascript"></script>
-<script src="http://inventwithpython.com/source/odometerdisplay.js" type="text/javascript"></script>
--->
+
+
 <script type="text/javascript">
 
 
@@ -457,4 +456,4 @@ function update () {
 
 startodometers();
 </script>
-
+-->
