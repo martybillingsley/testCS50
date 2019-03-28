@@ -4,8 +4,8 @@ This is a test of embedding HMTL and scripts <br><br>
 
 <div style="background-color:lightblue; padding:20px; width:300px;">
 	Input number (ord): 
-	<input id="ordNumberInput" type="number" min="0" value="65"></input><br>
-	<input type="button" value="Click to Convert" onclick="convertToEmoji();"></input>
+	<input id="ordNumberInput" type="number" min="0" value="65"><br>
+	<input type="button" value="Click to Convert" onclick="convertToEmoji();">
 	<div id="emojiOutput" style="width:100px;">Stuff</div>
 <br></div>
 
