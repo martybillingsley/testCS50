@@ -4,3 +4,6 @@ lab50:
     - readme
     - terminal
     - browser
+  files:
+    - !include index.html
+    - !include style.css
