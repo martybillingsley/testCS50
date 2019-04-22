@@ -4,3 +4,7 @@ lab50:
     - readme
     - terminal
     - x
+  files:
+    - !include imgFuncs.py
+    - !include bear.jpg
+    - !include flower.jpg
