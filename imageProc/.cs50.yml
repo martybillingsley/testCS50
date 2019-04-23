@@ -5,5 +5,4 @@ lab50:
     - terminal
     - x
   files:
-    - !include imgFuncs.py
     - !include funcs.py
