@@ -16,8 +16,7 @@ def makePicture(fName):
 # shows an image in it's own window within the GUI window
 def show(img):
     img.show()
- 
-# GET COLORS
+
 # returns the red value of the pixel at x,y of the img
 def getRed(img, x, y):
     r = img.getpixel((x,y))[0]
@@ -30,8 +29,16 @@ def getGreen(img, x, y):
 def getBlue(img, x, y):
     b = img.getpixel((x,y))[2]
     return (b)
+# returns the color (a three-tuple) of the pixsl at x,y of the img
+def getColor(img, x, y):
+    c = img.getPixel((x,y))
+    return (c)
 
-# SET COLORS
+# given red, green, blue values, returns a color (a three-tuple)
+def makeColor(r, g, b):
+    c = (r,g,b)
+    return (c)
+
 # set the red value of the pixel at x,y of the img
 def setRed(img, x, y, r):
     rgb = img.getpixel((x,y))
@@ -44,3 +51,5 @@ def setGreen(img, x, y, g):
 def setBlue(img, x, y, b):
     rgb = img.getpixel((x,y))
     img.putpixel((x,y), (rgb[0],rgb[1],b))
+def setColor(img, x, y, c):
+    img.putpixel((x,y),c)
