@@ -53,3 +53,14 @@ def setBlue(img, x, y, b):
     img.putpixel((x,y), (rgb[0],rgb[1],b))
 def setColor(img, x, y, c):
     img.putpixel((x,y),c)
+
+# returns the width of an image
+def getWidth(img):
+    w = img.size[0]
+    return (w)
+
+# returns the height of an image
+def getHeight(img):
+    h = img.size[1]
+    return (h)
+ 
