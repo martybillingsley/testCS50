@@ -17,3 +17,30 @@ def makePicture(fName):
 def show(img):
     img.show()
  
+# GET COLORS
+# returns the red value of the pixel at x,y of the img
+def getRed(img, x, y):
+    r = img.getpixel((x,y))[0]
+    return (r)
+# returns the green value of the pixel at x,y of the img
+def getGreen(img, x, y):
+    g = img.getpixel((x,y))[1]
+    return (g)
+# returns the blue value of the pixel at x,y of the img
+def getBlue(img, x, y):
+    b = img.getpixel((x,y))[2]
+    return (b)
+
+# SET COLORS
+# set the red value of the pixel at x,y of the img
+def setRed(img, x, y, r):
+    rgb = img.getpixel((x,y))
+    img.putpixel((x,y), (r,rgb[1],rgb[2]))
+# set the green value of the pixel at x,y of the img
+def setGreen(img, x, y, g):
+    rgb = img.getpixel((x,y))
+    img.putpixel((x,y), (rgb[0],g,rgb[2]))  
+ # set the red value of the pixel at x,y of the img
+def setBlue(img, x, y, b):
+    rgb = img.getpixel((x,y))
+    img.putpixel((x,y), (rgb[0],rgb[1],b))
