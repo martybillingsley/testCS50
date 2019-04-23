@@ -17,6 +17,7 @@ def makePicture(fName):
 def show(img):
     img.show()
 
+# GET COLORS
 # returns the red value of the pixel at x,y of the img
 def getRed(img, x, y):
     r = img.getpixel((x,y))[0]
@@ -39,6 +40,7 @@ def makeColor(r, g, b):
     c = (r,g,b)
     return (c)
 
+# SETS COLORS
 # set the red value of the pixel at x,y of the img
 def setRed(img, x, y, r):
     rgb = img.getpixel((x,y))
