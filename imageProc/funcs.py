@@ -1,4 +1,4 @@
-from imgFuncs.py import *
+from imgFuncs import *
 
 img = makePicture('flower.jpg')
 pixels = img.load()
