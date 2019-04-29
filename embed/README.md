@@ -461,4 +461,8 @@ startodometers();
 
 {% spoiler "Solution" %}
 Forty-two.
+{% spoiler "Really?" %}
+It's really forty-two.
+{% endspoiler %}
+Is that right?
 {% endspoiler %}
