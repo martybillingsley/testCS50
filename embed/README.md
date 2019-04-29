@@ -458,3 +458,7 @@ function update () {
 startodometers();
 </script>
 -->
+
+{% spoiler "Solution" %}
+Forty-two.
+{% endspoiler %}
